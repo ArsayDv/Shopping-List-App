@@ -1,0 +1,13 @@
+.main-container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.p-styles{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.text-center{
+    text-align: center;
+}

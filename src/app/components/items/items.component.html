@@ -1,0 +1,11 @@
+<div class="main-container">
+    <div *ngIf="items[0]; else textVoid">
+        <app-total mensaje="Total por pagar" [total]="total"></app-total>
+    </div>
+    <ng-template #textVoid>
+        <p class="text-center p-styles">Lista vacía.</p>
+        <p class="text-center">Agregue un nuevo artículo a la lista en la sección de Nuevo!</p>
+    </ng-template>
+    <app-item *ngFor="let item of items" [item]="item" (deleteItem)="deleteItem($event)" (toggleItem)="toggleItem($event)">
+    </app-item>
+</div>
